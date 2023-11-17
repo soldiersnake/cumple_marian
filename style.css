@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+h1{
+    color: violet;
+    background-color: yellow;
+}
+h2{
+    color: black;
+    background-color: aqua;
+}
+h3{
+    background-color: black;
+}
+
+#imageContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+    z-index: 999; /* Valor positivo para estar por encima de otros elementos */
+}
+p{
+    background-color: red;
+}
+
+
+.invitation-card {
+    background-color: black;
+    background-image: url(/img/frenchie.jpeg);
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover; /* Esto asegurará que la imagen cubra todo el espacio disponible */
+    background-position: center; /* Esto centrará la imagen en el div */
+    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.location iframe, .instagram iframe {
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .invitation-card {
+        width: 85%;
+        margin: 10px auto;
+    }
+}
